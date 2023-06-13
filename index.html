@@ -22,7 +22,7 @@
                     <li><a href="#skull">Skill</a></li>
                     <li><a href="#phonekr">Contact Me</a></li>
                     <li><a
-                            href="images/HemantUpload.pdf">Resume</a>
+                            href="https://drive.google.com/file/d/18VRoNYiLEKyUlk3j7DfI_lvw4lTIijWU/view?usp=sharing">Resume</a>
                     </li>
 
                     <i class="fa-sharp fa-solid fa-circle-xmark e5" onclick="closemenu()"></i>
@@ -187,7 +187,7 @@
                     <img src="images/skillmap.png" alt="">
                     <div class="layer">
                         <h3 class="e3">
-                            Skill Map
+                            Skill-Map
                         </h3>
                         <p class="e4">Skill Map is a dynamic online platform designed to empower college students on
                             their educational journey. Founded with a passion for guiding and mentoring the next
@@ -199,6 +199,13 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
 
     <!-----------------------------------------------Skills---------------------------------------------------->
     <div class="skull" id="skull">
@@ -296,8 +303,8 @@
                     <a href="" class="devtown"><i class="fa-solid fa-download fa-2x fa-bounce icon"></i></a>
                 </div>
             </div>
-            
-             <div class="acheivement-list">
+
+            <div class="acheivement-list">
                 <div class="acheivement1">
                     <h3 class="cer">Campus Ambassador at TechFest IITB</h3>
                     <a href="images/iitb.png" class="devtown"><i class="fa-solid fa-download fa-2x fa-bounce icon"></i></a>
@@ -326,12 +333,15 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" id="" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg">
+                        
+                    </span>
                 </div>
             </div>
         </div>
@@ -339,15 +349,34 @@
             <p>Copyright @hemantroy 2022-2050</p>
         </div>
     </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbziM6vyYlYRupAhtk_2M7aU2LF8Zj_67iYQ13U6bQKa0bsDsDrGqjUBBOPd_H1lKk0_/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
-</script>
+
 
 </html>
