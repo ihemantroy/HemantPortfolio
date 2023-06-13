@@ -219,6 +219,7 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    justify-content: center;
 }
 
 .work img {
@@ -284,7 +285,7 @@ nav ul li a:hover::after {
     background: #ff004f;
     border-radius: 3px;
     position: relative;
-    animation: fillBars 3s 30;
+    animation: fillBars 4s 3;
 }
 
 .skill-per::before {
@@ -448,6 +449,7 @@ nav .e5 {
 
 
 
+
 /* --------------------------------------------------------css for small screen---------------------- */
 @media only screen and (max-width:450px) {
     .header-text {
@@ -543,4 +545,14 @@ nav .e5 {
     {
         flex-basis: 100%;
     }
+}
+
+#msg
+{
+    color: #61b752;
+    margin-top: -30px;
+    display: block;
+    margin-left: 8px;
+
+
 }
