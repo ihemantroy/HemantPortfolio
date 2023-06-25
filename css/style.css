@@ -256,8 +256,9 @@ nav ul li a:hover::after {
 }
 
 .e4 {
-    margin-bottom: 10px;
-    ;
+    line-height: 1.5;
+    font-weight: 50;
+    font-size: 0.9rem;
 }
 
 /*----------------------------skill-----------------------------------------------------------------*/
