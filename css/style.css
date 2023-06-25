@@ -67,30 +67,8 @@ nav ul li a:hover::after {
     margin-top: 20%;
     /* margin-left: 1%; */
     font-size: 30px;
-    transition: 2s;
+    
 }
-.springy-text {
-    color: white;
-    font-size: 25px;
-    animation-name: springy-text;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count:2;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-  }
-  @keyframes springy-text {
-    0%   {
-      letter-spacing: 0.6em;
-      color: #ff004f;
-    }
-    100%   {
-      letter-spacing: 0.1em;
-      color:white ;
-    }
-  }
-
 
 .header-text h1 {
     font-size: 60px;
