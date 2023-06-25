@@ -31,8 +31,9 @@
             </nav>
             <div class="header-text">
                 <p>Full stack developer | Programmer</p>
-                <h1>Hi, I'm <span class="e1">H</span>emant<span class="e1">!!</span></h1>
+                <h1>Hi, I'm <span class="animate-character">Hemant</span>
             </div>
+
         </div>
     </div>
 
@@ -158,15 +159,14 @@
                     <img src="images/work3.png" alt="">
                     <div class="layer">
                         <h3 class="e3">
-                            My Portfolio Website
+                            Weather Whiz
                         </h3>
-                        <p class="e4">Welcome to my portfolio!!I have crafted this site using a blend of HTML,
-                            CSS,and JavaScript to showcase my skills,projects,and experiences.As a passionate
-                            developer,I believe in the power of creativity and innovation.I invite you to take a moment
-                            and explore my portfolio website.Feel free to reach out to me through the provided contact
-                            info.
+                        <p class="e4">Introducing Weather-Whiz: Your Ultimate Weather Forecast App.
+                            Weather-Whiz is the go-to application for accurate and up-to-date weather forecasts right at
+                            your fingertips. With a sleek and intuitive interface, Weather-Whiz provides you with all
+                            the essential weather information you need, empowering you to plan your day with confidence.
                         </p>
-                        <a href="https://ihemantroy.github.io/Portfolio/" class="btn">Visit</a>
+                        <a href="https://ihemantroy.github.io/Weather-Whiz/" class="btn">Visit</a>
                     </div>
                 </div>
                 <div class="work">
@@ -199,6 +199,9 @@
             </div>
         </div>
     </div>
+
+
+
 
 
 
@@ -307,7 +310,8 @@
             <div class="acheivement-list">
                 <div class="acheivement1">
                     <h3 class="cer">Campus Ambassador at TechFest IITB</h3>
-                    <a href="images/iitb.png" class="devtown"><i class="fa-solid fa-download fa-2x fa-bounce icon"></i></a>
+                    <a href="images/iitb.png" class="devtown"><i
+                            class="fa-solid fa-download fa-2x fa-bounce icon"></i></a>
                 </div>
             </div>
         </div>
@@ -340,7 +344,7 @@
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg">
-                        
+
                     </span>
                 </div>
             </div>
@@ -362,20 +366,20 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbziM6vyYlYRupAhtk_2M7aU2LF8Zj_67iYQ13U6bQKa0bsDsDrGqjUBBOPd_H1lKk0_/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully!!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },1000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully!!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 1000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 
