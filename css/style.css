@@ -91,9 +91,6 @@ nav ul li a:hover::after {
     }
   }
 
-.header-text:hover {
-    font-size: 60px;
-}
 
 .header-text h1 {
     font-size: 60px;
