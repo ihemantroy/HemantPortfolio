@@ -67,7 +67,7 @@ nav ul li a:hover::after {
     margin-top: 20%;
     /* margin-left: 1%; */
     font-size: 30px;
-    transition: 1s;
+    transition: 2s;
 }
 .springy-text {
     color: white;
